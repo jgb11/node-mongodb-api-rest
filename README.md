@@ -9,4 +9,4 @@ docker run --name api_rest_mongodb -d -p 27017:27017 mongo
 Run project:
 - download & intass [Node.js](https://nodejs.org/es/download/)
 - ```cd [PROJECT_FOLDER]```
-- node index.js
+- npm start
