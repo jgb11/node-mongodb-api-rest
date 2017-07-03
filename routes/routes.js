@@ -7,7 +7,7 @@ const auth = require('../middlewares/auth');
 
 const api = express.Router();
 
-api.get('/products', productController.getAllProducts);
+api.get('/products', auth, productController.getAllProducts);
 api.get('/products/:id', productController.getProduct);
 api.post('/products', productController.postProduct);
 api.put('/products/:id', productController.putProduct);
